@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap" rel="stylesheet">
+
+  <title>Frontend Mentor | Interactive rating component</title>
+</head>
+
+<body>
+
+  <main>
+
+    <!-- Rating state start -->
+    <article class="product product__feedback">
+      <picture class="product__img">
+        <img src="images/icon-star.svg" alt="A Star Icon">
+      </picture>
+
+      <div class="product__content">
+        <h1 class="product__qn">How did we do?</h1>
+
+        <p class="product__para">Please let us know how we did with your support request. All feedback is appreciated to
+          help us improve our offering!</p>
+
+        <!-- <div class="flex-group">
+          <ol class="product__ratings flex-group">
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
+            <li>4</li>
+            <li>5</li>
+          </ol>
+        </div> -->
+
+        <div class="flex-group">
+          <button class="product__rating-button">1</button>
+          <button class="product__rating-button">2</button>
+          <button class="product__rating-button">3</button>
+          <button class="product__rating-button">4</button>
+          <button class="product__rating-button">5</button>
+        </div>
+
+        <button class="product__submit">SUBMIT</button>
+      </div>
+    </article>
+    <!-- Rating state end -->
+
+    <!-- Thank you state start -->
+    <article class="product product__thanks" style="display: none;">
+      <picture class="product__thanks-img">
+        <img src="images/illustration-thank-you.svg" alt="Illustration of thanks">
+      </picture>
+
+      <div class="product__thanks-content">
+        <span class="product__selected-rating">You selected <span class="givenRating"></span> out of 5</span>
+
+        <h1>Thank you!</h1>
+
+        <p class="product__thanks-para">We appreciate you taking the time to give a rating. If you ever need more
+          support,
+          don’t hesitate to get in touch!</p>
+      </div>
+      <!-- Thank you state end -->
+    </article>
+
+  </main>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

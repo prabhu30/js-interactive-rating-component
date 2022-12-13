@@ -1,0 +1,222 @@
+/* variables */
+:root {
+    --clr-primary-400: hsl(25, 97%, 53%);
+
+    --clr-neutral-100: hsl(0, 0%, 100%);
+    --clr-neutral-400: hsl(216, 12%, 54%);
+    --clr-neutral-500: hsl(217, 12%, 63%);
+
+    --clr-neutral-800: hsl(213, 19%, 18%);
+    --clr-neutral-900: hsl(216, 12%, 8%);
+}
+
+/*
+  1. Use a more-intuitive box-sizing model.
+*/
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/*
+    2. Remove default margin
+  */
+* {
+    margin: 0;
+}
+
+/*
+    3. Allow percentage-based heights in the application
+  */
+html,
+body {
+    height: 100%;
+}
+
+/*
+    Typographic tweaks!
+    4. Add accessible line-height
+    5. Improve text rendering
+  */
+body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+}
+
+/*
+    6. Improve media defaults
+  */
+img,
+picture,
+video,
+canvas,
+svg {
+    display: block;
+    max-width: 100%;
+}
+
+/*
+    7. Remove built-in form typography styles
+  */
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+/*
+    8. Avoid text overflows
+  */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    overflow-wrap: break-word;
+}
+
+/*
+    9. Create a root stacking context
+  */
+#root,
+#__next {
+    isolation: isolate;
+}
+
+/* general styling */
+
+body {
+    font-family: 'Overpass', sans-serif;
+    background-color: var(--clr-neutral-900);
+    color: var(--clr-neutral-100);
+
+    display: grid;
+    place-content: center;
+    margin: 1rem;
+}
+
+.product {
+    max-width: 400px;
+    border: 1px solid var(--clr-neutral-900);
+    border-radius: 0.875rem;
+    background-color: var(--clr-neutral-800);
+    padding: 1.5rem;
+
+    display: grid;
+    gap: 0.75rem;
+}
+
+.product__img {
+    border: 1px solid var(--clr-neutral-800);
+    background-color: hsl(216, 12%, 15%);
+    width: 2.5rem;
+    padding: 0.75rem;
+    border-radius: 50%;
+}
+
+.product__content {
+    display: grid;
+    gap: 0.5rem;
+}
+
+.product__para {
+    font-size: 15px;
+    color: var(--clr-neutral-500);
+}
+
+/* rating numbers styling - start */
+.product__ratings {
+
+    /* margin: 0; */
+    padding: 1rem 0;
+    list-style-type: none;
+    width: 100%;
+}
+
+.product__ratings>li {
+    color: var(--clr-neutral-500);
+    text-align: center;
+    width: 3rem;
+    display: inline-block;
+    border: 1px solid var(--clr-neutral-800);
+    border-radius: 50%;
+    background-color: hsl(216, 12%, 15%);
+    padding: 0.75rem;
+}
+
+/* rating numbers styling - end */
+
+.product__rating-button {
+    color: var(--clr-neutral-500);
+    background-color: hsl(216, 12%, 15%);
+
+    width: 3rem;
+    padding: 0.75rem;
+    border-style: none;
+    border-radius: 50%;
+}
+
+.product__rating-button:hover {
+    cursor: pointer;
+}
+
+.product__rating-button:focus {
+    color: var(--clr-neutral-100);
+    background-color: hsl(25, 97%, 53%);
+}
+
+.flex-group {
+    display: flex;
+    justify-content: space-around;
+    gap: 1rem;
+
+    padding: 1rem 0;
+}
+
+.product__submit {
+    letter-spacing: 0.125rem;
+    padding: 0.75rem;
+    border-style: none;
+    /* border-radius: 0.5rem; */
+    border-radius: 2rem;
+    background-color: var(--clr-primary-400);
+    color: var(--clr-neutral-100);
+}
+
+/* thank you page */
+.product__thanks {
+    font-size: 15px;
+    text-align: center;
+    gap: 1.5rem;
+}
+
+.product__thanks-img {
+    margin: 0 auto;
+}
+
+.product__thanks-content {
+    display: grid;
+    gap: 1rem;
+}
+
+.product__selected-rating {
+    color: var(--clr-primary-400);
+    background-color: hsl(216, 12%, 25%);
+
+    margin: 0 auto;
+    padding: 0.5rem 0.8125rem;
+
+    border: 1px solid var(--clr-neutral-500);
+    border-style: none;
+    border-radius: 2rem;
+
+}
+
+.product__thanks-para {
+    text-align: justify center;
+    color: var(--clr-neutral-500);
+}
