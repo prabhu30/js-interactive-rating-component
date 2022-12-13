@@ -28,8 +28,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://github.com/prabhu30/js-interactive-rating-component)
-- Live Site URL: [Add live site URL here](https://prabhu30.github.io/js-interactive-rating-component/)
+- Solution URL: [Visit now](https://github.com/prabhu30/js-interactive-rating-component)
+- Live Site URL: [Visit now](https://prabhu30.github.io/js-interactive-rating-component/)
 
 ## My process
 
